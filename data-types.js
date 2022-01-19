@@ -1,4 +1,4 @@
-let url = "https://frontend-take-home.fetchrewards.com/form";
-fetch("http://example.com/movies.json")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+fetch("https://frontend-take-home.fetchrewards.com/form").then((response) => {
+  console.log(response);
+  return response.json();
+});
