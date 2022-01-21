@@ -25,14 +25,21 @@
           type="text"
           placeholder="Enter your name here"
           autocomplete="on"
+          required
         />
-        <input type="email" placeholder="Enter your email" autocomplete="on" />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          autocomplete="on"
+          required
+        />
         <input
           type="password"
           placeholder="Enter a password"
           autocomplete="on"
+          required
         />
-        <select id="occupation">
+        <select id="occupation" required>
           <option value="occupation">Occupations</option>
           <option value="head of shrubbery">Head of Shrubbery</option>
           <option value="Interim">Interim Substitute Teacher</option>
@@ -48,7 +55,7 @@
           <option value="Widget">Widget Fabricator</option>
           <option value="Underwater">Underwater Basket Weaver</option>
         </select>
-        <select name="state" id="state">
+        <select name="state" id="state" required>
           <option value="" selected="selected">Select a State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>

@@ -17,3 +17,6 @@ body {
   background-color: #acd848;
   border: 10px solid #885df1;
 }
+.col-4 {
+  display: block;
+}

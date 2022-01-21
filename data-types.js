@@ -1,12 +1,16 @@
-fetch("https://frontend-take-home.fetchrewards.com/form", {
-  method: "GET",
-  Headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({}),
-})
-  .then((res) => {
-    return res.json();
+function getRequest() {
+  fetch("https://frontend-take-home.fetchrewards.com/form", {
+    method: "GET",
   })
-  .then((data) => console.log(data))
-  .catch((error) => console.log("ERROR"));
+    .then(validateResponse)
+    .then(readResponseAsText)
+    .then(logResult)
+    .catch(logError);
+
+  window.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+  });
+}
+
+let dataForm = `https://frontend-take-home.fetchrewards.com/form`;
+console.log(dataForm);
