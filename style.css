@@ -19,4 +19,9 @@ body {
 }
 .col-4 {
   display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+select {
+  font-family: monospace;
 }

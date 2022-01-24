@@ -1,16 +1,12 @@
-function getRequest() {
-  fetch("https://frontend-take-home.fetchrewards.com/form", {
-    method: "GET",
-  })
-    .then(validateResponse)
-    .then(readResponseAsText)
-    .then(logResult)
-    .catch(logError);
+const formData = new FormData();
 
-  window.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM fully loaded and parsed");
-  });
-}
+const btn = document.querySelector("#submit");
+const form = document.querySelector("#submit-form");
+const data = document.querySelector("#data-form");
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+});
 
 let dataForm = `https://frontend-take-home.fetchrewards.com/form`;
 console.log(dataForm);
